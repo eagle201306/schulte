@@ -1,0 +1,158 @@
+.home-page {
+  padding-top: 36rpx;
+}
+
+.hero {
+  padding: 24rpx 8rpx 30rpx;
+}
+
+.eyebrow {
+  font-size: 22rpx;
+  letter-spacing: 5rpx;
+  color: #8a8f9d;
+  font-weight: 700;
+}
+
+.title {
+  margin-top: 14rpx;
+  font-size: 54rpx;
+  line-height: 1.18;
+  font-weight: 800;
+  letter-spacing: -1rpx;
+}
+
+.subtitle {
+  margin-top: 18rpx;
+  max-width: 620rpx;
+  color: #747986;
+  font-size: 27rpx;
+  line-height: 1.7;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16rpx;
+  margin-bottom: 22rpx;
+}
+
+.summary-card {
+  padding: 26rpx 14rpx 24rpx;
+  text-align: center;
+}
+
+.summary-value {
+  font-size: 32rpx;
+  line-height: 1.2;
+  font-weight: 750;
+}
+
+.summary-label {
+  margin-top: 10rpx;
+  font-size: 20rpx;
+  color: #969ba7;
+}
+
+.difficulty {
+  padding: 30rpx;
+}
+
+.section-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 28rpx;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: 750;
+}
+
+.section-desc {
+  margin-top: 8rpx;
+  font-size: 23rpx;
+  color: #9297a4;
+}
+
+.level-tag {
+  padding: 8rpx 14rpx;
+  border-radius: 999rpx;
+  background: #f0f1f5;
+  font-size: 19rpx;
+  font-weight: 700;
+  color: #707582;
+  letter-spacing: 1rpx;
+}
+
+.size-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10rpx;
+}
+
+.size-item {
+  min-width: 0;
+  padding: 19rpx 4rpx 16rpx;
+  text-align: center;
+  border-radius: 18rpx;
+  background: #f7f8fa;
+  border: 2rpx solid transparent;
+}
+
+.size-item.active {
+  background: #17191f;
+  color: #ffffff;
+}
+
+.size-number {
+  font-size: 25rpx;
+  font-weight: 750;
+}
+
+.size-label {
+  margin-top: 5rpx;
+  font-size: 18rpx;
+  color: #989daa;
+}
+
+.size-item.active .size-label {
+  color: #bfc3cc;
+}
+
+.tip {
+  display: flex;
+  gap: 24rpx;
+  margin-top: 22rpx;
+  padding: 28rpx 30rpx;
+}
+
+.tip-index {
+  font-size: 22rpx;
+  font-weight: 800;
+  color: #b0b4be;
+}
+
+.tip-content {
+  flex: 1;
+}
+
+.tip-title {
+  font-size: 27rpx;
+  font-weight: 700;
+}
+
+.tip-text {
+  margin-top: 8rpx;
+  font-size: 24rpx;
+  color: #7f8490;
+  line-height: 1.7;
+}
+
+.start-btn {
+  margin-top: 30rpx;
+}
+
+.history-btn {
+  margin-top: 18rpx;
+}

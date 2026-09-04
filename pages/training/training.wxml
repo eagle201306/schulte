@@ -1,0 +1,45 @@
+<view class="training-page">
+  <view class="top-panel">
+    <view class="metric">
+      <view class="metric-value">{{elapsedText}}<text class="unit">s</text></view>
+      <view class="metric-label">用时</view>
+    </view>
+    <view class="target-wrap">
+      <view class="target-label">当前目标</view>
+      <view class="target-number">{{currentNumber > total ? '✓' : currentNumber}}</view>
+    </view>
+    <view class="metric metric-right">
+      <view class="metric-value">{{errors}}</view>
+      <view class="metric-label">错误</view>
+    </view>
+  </view>
+
+  <view class="progress-track">
+    <view class="progress-fill" style="width: {{progress}}%;"></view>
+  </view>
+
+  <view class="training-hint">{{isStarted ? '保持视线在中心区域，继续寻找目标数字' : '点击数字 1 开始计时'}}</view>
+
+  <view
+    class="board"
+    style="grid-template-columns: repeat({{size}}, 1fr); gap: {{boardGap}}rpx;"
+  >
+    <view
+      wx:for="{{numbers}}"
+      wx:key="*this"
+      class="cell {{item < currentNumber ? 'done' : ''}}"
+      style="font-size: {{cellFontSize}}rpx;"
+      data-value="{{item}}"
+      bindtap="tapCell"
+    >
+      {{item}}
+    </view>
+  </view>
+
+  <view class="bottom-info">
+    <view class="counter">{{currentNumber > total ? total : currentNumber - 1}} / {{total}}</view>
+    <view class="mode">{{size}} × {{size}} 标准数字模式</view>
+  </view>
+
+  <button class="restart" bindtap="restartGame">重新随机</button>
+</view>

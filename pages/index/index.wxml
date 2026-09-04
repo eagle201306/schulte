@@ -1,0 +1,56 @@
+<view class="container home-page">
+  <view class="hero">
+    <view class="eyebrow">FOCUS TRAINING</view>
+    <view class="title">舒尔特专注训练</view>
+    <view class="subtitle">每天 5 分钟，训练视觉搜索、注意力与反应速度</view>
+  </view>
+
+  <view class="summary-grid">
+    <view class="summary-card card">
+      <view class="summary-value">{{trainingCount}}</view>
+      <view class="summary-label">累计训练</view>
+    </view>
+    <view class="summary-card card">
+      <view class="summary-value">{{bestText}}</view>
+      <view class="summary-label">当前难度最佳</view>
+    </view>
+    <view class="summary-card card">
+      <view class="summary-value">{{recentScore}}</view>
+      <view class="summary-label">最近评分</view>
+    </view>
+  </view>
+
+  <view class="difficulty card">
+    <view class="section-head">
+      <view>
+        <view class="section-title">选择难度</view>
+        <view class="section-desc">{{selectedSize}} × {{selectedSize}} · {{totalCells}} 个数字</view>
+      </view>
+      <view class="level-tag">LEVEL {{selectedSize - 2}}</view>
+    </view>
+
+    <view class="size-row">
+      <view
+        wx:for="{{sizes}}"
+        wx:key="*this"
+        class="size-item {{selectedSize === item ? 'active' : ''}}"
+        data-size="{{item}}"
+        bindtap="selectSize"
+      >
+        <view class="size-number">{{item}}×{{item}}</view>
+        <view class="size-label">{{item === 3 ? '入门' : item === 4 ? '基础' : item === 5 ? '标准' : item === 6 ? '进阶' : '挑战'}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="tip card">
+    <view class="tip-index">01</view>
+    <view class="tip-content">
+      <view class="tip-title">训练规则</view>
+      <view class="tip-text">保持视线尽量集中在方格中央，按 1 → {{totalCells}} 的顺序依次点击数字。</view>
+    </view>
+  </view>
+
+  <button class="primary-btn start-btn" bindtap="startTraining">开始训练</button>
+  <button class="secondary-btn history-btn" bindtap="openHistory">查看历史成绩</button>
+</view>

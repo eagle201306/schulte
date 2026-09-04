@@ -1,0 +1,57 @@
+<view class="container history-page">
+  <view class="page-head">
+    <view>
+      <view class="title">历史成绩</view>
+      <view class="subtitle">观察训练速度和稳定性的变化</view>
+    </view>
+    <view class="clear" bindtap="clearAll">清空</view>
+  </view>
+
+  <scroll-view class="filter-scroll" scroll-x="true" enable-flex="true">
+    <view class="filter-row">
+      <view
+        wx:for="{{sizes}}"
+        wx:key="*this"
+        class="filter {{activeSize == item ? 'active' : ''}}"
+        data-size="{{item}}"
+        bindtap="selectSize"
+      >
+        {{item === '全部' ? item : item + '×' + item}}
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class="overview">
+    <view class="overview-item card">
+      <view class="overview-value">{{totalCount}}</view>
+      <view class="overview-label">训练次数</view>
+    </view>
+    <view class="overview-item card">
+      <view class="overview-value">{{bestText}}</view>
+      <view class="overview-label">最佳成绩</view>
+    </view>
+    <view class="overview-item card">
+      <view class="overview-value">{{avgText}}</view>
+      <view class="overview-label">平均成绩</view>
+    </view>
+  </view>
+
+  <view wx:if="{{records.length}}" class="record-list">
+    <view class="record card" wx:for="{{records}}" wx:key="id">
+      <view class="record-left">
+        <view class="record-size">{{item.size}} × {{item.size}}</view>
+        <view class="record-date">{{item.dateText}}</view>
+      </view>
+      <view class="record-main">
+        <view class="record-time">{{item.durationText}}</view>
+        <view class="record-sub">准确率 {{item.accuracy}}% · 错误 {{item.errors}}</view>
+      </view>
+      <view class="score-badge">{{item.score}}</view>
+    </view>
+  </view>
+
+  <view wx:else class="empty card">
+    <view class="empty-title">还没有训练记录</view>
+    <view class="empty-text">完成一次舒尔特训练后，成绩会显示在这里。</view>
+  </view>
+</view>

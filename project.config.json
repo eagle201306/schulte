@@ -1,0 +1,21 @@
+{
+  "description": "舒尔特专注训练 V1.0",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "compileHotReLoad": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "trial",
+  "appid": "wxd7246dacc8e75b99",
+  "projectname": "schulte-wechat-miniapp-v1.0.1",
+  "condition": {},
+  "miniprogramRoot": "./",
+  "simulatorPluginLibVersion": {}
+}

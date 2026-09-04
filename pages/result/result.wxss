@@ -1,0 +1,159 @@
+.result-page {
+  padding-top: 34rpx;
+}
+
+.result-head {
+  padding: 14rpx 6rpx 30rpx;
+}
+
+.result-kicker {
+  font-size: 20rpx;
+  letter-spacing: 4rpx;
+  color: #9a9fab;
+  font-weight: 700;
+}
+
+.result-title {
+  margin-top: 12rpx;
+  font-size: 50rpx;
+  font-weight: 820;
+}
+
+.result-mode {
+  margin-top: 10rpx;
+  color: #858a96;
+  font-size: 25rpx;
+}
+
+.score-card {
+  padding: 30rpx;
+}
+
+.score-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.score-label {
+  font-size: 27rpx;
+  font-weight: 700;
+}
+
+.score-caption {
+  margin-top: 8rpx;
+  font-size: 23rpx;
+  color: #8f949f;
+}
+
+.score-number {
+  font-size: 70rpx;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.score-track {
+  height: 10rpx;
+  margin-top: 26rpx;
+  background: #eceef2;
+  overflow: hidden;
+  border-radius: 999rpx;
+}
+
+.score-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: #17191f;
+}
+
+.best-note {
+  margin-top: 18rpx;
+  font-size: 22rpx;
+  color: #535965;
+  font-weight: 600;
+}
+
+.main-stat {
+  margin-top: 18rpx;
+  padding: 34rpx 30rpx;
+  text-align: center;
+}
+
+.main-value {
+  font-size: 64rpx;
+  font-weight: 850;
+}
+
+.main-label {
+  margin-top: 5rpx;
+  color: #8c919d;
+  font-size: 23rpx;
+}
+
+.best-line {
+  margin-top: 16rpx;
+  font-size: 22rpx;
+  color: #a0a4ae;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16rpx;
+  margin-top: 18rpx;
+}
+
+.stat-card {
+  padding: 27rpx 20rpx;
+}
+
+.stat-value {
+  font-size: 39rpx;
+  font-weight: 790;
+}
+
+.stat-value.small {
+  font-size: 33rpx;
+}
+
+.stat-label {
+  margin-top: 7rpx;
+  font-size: 21rpx;
+  color: #969ba6;
+}
+
+.detail {
+  margin-top: 18rpx;
+  padding: 10rpx 28rpx;
+}
+
+.detail-row {
+  height: 82rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #eff0f3;
+  color: #686e79;
+  font-size: 24rpx;
+}
+
+.detail-row.last {
+  border-bottom: none;
+}
+
+.primary-btn {
+  margin-top: 28rpx;
+}
+
+.bottom-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20rpx;
+  padding: 27rpx 0 8rpx;
+  color: #757b87;
+  font-size: 24rpx;
+}
+
+.dot {
+  color: #c6c9cf;
+}

@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/training/training",
+    "pages/result/result",
+    "pages/history/history"
+  ],
+  "window": {
+    "navigationBarTitleText": "舒尔特专注训练",
+    "navigationBarBackgroundColor": "#F6F7FB",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#F6F7FB",
+    "backgroundTextStyle": "light"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

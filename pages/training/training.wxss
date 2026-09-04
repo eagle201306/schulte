@@ -1,0 +1,124 @@
+page {
+  background: #f6f7fb;
+}
+
+.training-page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 34rpx 28rpx 36rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-panel {
+  display: grid;
+  grid-template-columns: 1fr 1.12fr 1fr;
+  align-items: center;
+}
+
+.metric-right {
+  text-align: right;
+}
+
+.metric-value {
+  font-size: 40rpx;
+  font-weight: 800;
+}
+
+.unit {
+  margin-left: 4rpx;
+  font-size: 22rpx;
+  color: #8d929e;
+  font-weight: 600;
+}
+
+.metric-label,
+.target-label {
+  margin-top: 5rpx;
+  color: #999eaa;
+  font-size: 21rpx;
+}
+
+.target-wrap {
+  text-align: center;
+}
+
+.target-number {
+  margin-top: 3rpx;
+  font-size: 68rpx;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.progress-track {
+  width: 100%;
+  height: 8rpx;
+  margin-top: 30rpx;
+  overflow: hidden;
+  background: #e9ebf0;
+  border-radius: 999rpx;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #17191f;
+  border-radius: inherit;
+  transition: width 0.15s linear;
+}
+
+.training-hint {
+  margin: 34rpx 0 24rpx;
+  color: #858a96;
+  font-size: 23rpx;
+  text-align: center;
+}
+
+.board {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: grid;
+  box-sizing: border-box;
+}
+
+.cell {
+  min-width: 0;
+  min-height: 0;
+  border-radius: 18rpx;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 760;
+  box-shadow: 0 6rpx 20rpx rgba(31, 35, 48, 0.055);
+  transition: transform 0.08s ease, opacity 0.12s ease;
+}
+
+.cell:active {
+  transform: scale(0.94);
+}
+
+.cell.done {
+  opacity: 0.2;
+}
+
+.bottom-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 26rpx;
+  padding: 0 4rpx;
+  color: #8f949f;
+  font-size: 22rpx;
+}
+
+.counter {
+  color: #2c3038;
+  font-weight: 700;
+}
+
+.restart {
+  margin-top: auto;
+  padding-top: 24rpx;
+  background: transparent;
+  color: #737986;
+  font-size: 25rpx;
+}
